@@ -1,12 +1,16 @@
 import { gql } from 'apollo-boost';
 
 export default gql`
-query CABECERA {
-    allConfigurations(first:1) {
+query EVENTS {
+    allEvents {
     
         name
+
+        dateStart
         
-        logo {
+        dateEnd
+        
+        image {
             resizedImages {
                 file {
                     publicUrl

@@ -5,7 +5,7 @@
     import { onMount } from "svelte"
 
     import Header from "../../../components/ui/Header/Header";
-    import CABECERA from "../../../api/backend/CABECERA";
+    import HEADER from "../../../api/backend/HEADER";
 
     const { client, mediaUrl } = getContext("api");
     
@@ -15,7 +15,7 @@
     onMount(async()=>{
 
         const query = await client.query({
-            query: CABECERA
+            query: HEADER
         })
 
         const { name, logo } = query.data.allConfigurations[0];
