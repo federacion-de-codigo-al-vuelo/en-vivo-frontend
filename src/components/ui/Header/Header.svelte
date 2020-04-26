@@ -1,10 +1,14 @@
 <script>
-
+    export let logo
 </script>
 <header>
 
-    <h4>CAV</h4>
 
+    {#if logo}
+        <img src={logo} alt="Logo"/>
+    {/if}
+
+    
     <nav>
         <ul>
             <li>
