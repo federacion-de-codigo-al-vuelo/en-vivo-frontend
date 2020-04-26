@@ -17,6 +17,9 @@
                 <span>{event.dateStart}</span> - <span>{event.dateEnd}</span>
             </section>
         </header>
+        <section class="image">
+            <img src={event.image} alt={event.name}/>
+        </section>
     </article>
 
 {/if}
