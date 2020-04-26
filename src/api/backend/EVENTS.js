@@ -3,11 +3,12 @@ import { gql } from 'apollo-boost';
 export default gql`
 query EVENTS {
     allEvents {
-    
-        name
-
-        dateStart
         
+        id
+        name
+        slug
+
+        dateStart    
         dateEnd
         
         image {

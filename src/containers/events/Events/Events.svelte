@@ -23,8 +23,9 @@
         events = query.data.allEvents.map(e=>({
             ...e,
             image: mediaUrl + e.image.resizedImages[0].file.publicUrl
-        }));
+        }))
         
+        events = events.sort((a,b)=>(new Date(a.dateStart))-(new Date(b.dateStart)));
 
     })
 

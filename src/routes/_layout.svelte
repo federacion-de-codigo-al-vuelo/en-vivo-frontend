@@ -17,6 +17,7 @@
 	import { setContext } from "svelte";
 	import apollo from '../apollo';
 	import Connect from '../components/api/Connect';
+	import Header from "../containers/ui/Header/Header"
 
 	export let api
 	export let mediaUrl
@@ -36,6 +37,7 @@
 {#if client}
 
 	<Connect {client} {mediaUrl}>
+		<Header/>
 		<slot></slot>
 	</Connect>
 

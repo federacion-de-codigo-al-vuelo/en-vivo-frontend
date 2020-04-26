@@ -8,10 +8,10 @@
 {#if Array.isArray(events)}
     <ul>
 
-        {#each events as event,i ("event_"+i)}
+        {#each events as event,i ("event_"+event.id)}
 
             <article>
-                <a href={"#"}>
+                <a href={"/events/"+event.slug}>
                     {event.name}
                 </a>
             </article>
