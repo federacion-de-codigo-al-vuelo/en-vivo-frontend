@@ -1,5 +1,3 @@
-<script></script>
-
 <svelte:head>
 	<title>Código al Vuelo</title>
 </svelte:head>

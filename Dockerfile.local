@@ -1,0 +1,8 @@
+FROM node:12
+
+ARG EN_VIVO_BACKEND_API_URL
+ENV EN_VIVO_BACKEND_API_URL $EN_VIVO_BACKEND_API_URL
+
+WORKDIR /en-vivo-frontend
+
+CMD ["yarn", "dev"]
