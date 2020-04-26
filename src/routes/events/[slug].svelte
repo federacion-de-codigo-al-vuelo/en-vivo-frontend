@@ -4,19 +4,19 @@
 
 		const { slug } = page.params;
 
-		return { event: { slug } };
+		return { slug };
 
 	}
 
 </script>
 
 <script>
-	
-    export let event;
+
+	import Event from "../../containers/events/Event/Event"
+
+    export let slug;
 
 </script>
 
 
-<h1>
-    { event.slug }
-</h1>
+<Event {slug}/>
